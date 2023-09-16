@@ -23,7 +23,7 @@ public interface CustomerReadUseCase {
     @Getter
     @Builder
     @ToString
-    public static class FindCustomerResult {
+    class FindCustomerResult {
         private final String phoneNumber;
         private final Gender gender;
         private final float points;
