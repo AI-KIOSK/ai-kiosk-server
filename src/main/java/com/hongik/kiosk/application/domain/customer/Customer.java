@@ -1,6 +1,5 @@
 package com.hongik.kiosk.application.domain.customer;
 
-import com.hongik.kiosk.application.domain.points.Points;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
