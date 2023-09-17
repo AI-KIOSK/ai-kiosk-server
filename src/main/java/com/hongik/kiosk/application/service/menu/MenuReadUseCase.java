@@ -10,7 +10,6 @@ import lombok.ToString;
 import java.util.List;
 
 public interface MenuReadUseCase {
-
     List<FindMenuResult> findAllMenu();
 
     @Getter

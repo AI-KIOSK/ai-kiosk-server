@@ -1,5 +1,6 @@
 package com.hongik.kiosk.application.service.menu;
 
+import com.hongik.kiosk.infrastructure.persistence.postgresql.entity.MenuEntity;
 import com.hongik.kiosk.infrastructure.persistence.postgresql.repository.MenuRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
