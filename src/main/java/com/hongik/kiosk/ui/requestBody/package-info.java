@@ -1,1 +1,0 @@
-package com.hongik.kiosk.ui.requestBody;
