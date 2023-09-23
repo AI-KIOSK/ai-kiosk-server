@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.awt.*;
+import java.nio.ByteBuffer;
 
 
 @Getter
@@ -32,6 +34,7 @@ public class MenuEntity {
     @JoinColumn(name = "category_id")
     private CategoryEntity category;
 
+    private String description;
 
-
+    private byte[] img;
 }

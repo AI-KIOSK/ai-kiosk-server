@@ -17,14 +17,20 @@ public class MenuView {
     private final String name;
     private final int price;
     private final HotOrIced hotOrIced;
-    private boolean isWhipping;
+    private final boolean isWhipping;
     private final CategoryEntity category;
+    private final String description;
+    private final byte[] img;
 
     public MenuView(MenuReadUseCase.FindMenuResult result) {
         this.id = result.getId();
         this.name = result.getName();
         this.price = result.getPrice();
+        this.isWhipping = result.isWhipping();
         this.hotOrIced = result.getHotOrIced();
         this.category = result.getCategory();
+        this.description = result.getDescription();
+        this.img = result.getImg();
+
     }
 }

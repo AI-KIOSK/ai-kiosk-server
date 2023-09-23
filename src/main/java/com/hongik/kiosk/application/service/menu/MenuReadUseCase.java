@@ -24,6 +24,10 @@ public interface MenuReadUseCase {
         private final boolean isWhipping;
         private final CategoryEntity category;
 
+        private final String description;
+
+        private final byte[] img;
+
         public static FindMenuResult findByMenu(MenuEntity menu) {
             return FindMenuResult.builder()
                     .id(menu.getId())
@@ -32,6 +36,8 @@ public interface MenuReadUseCase {
                     .hotOrIced(menu.getHotOrIced())
                     .isWhipping(menu.isWhipping())
                     .category(menu.getCategory())
+                    .description(menu.getDescription())
+                    .img(menu.getImg())
                     .build();
         }
     }
