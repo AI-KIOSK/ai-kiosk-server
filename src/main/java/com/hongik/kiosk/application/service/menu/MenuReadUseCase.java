@@ -19,6 +19,7 @@ public interface MenuReadUseCase {
 
         private final Long id;
         private final String name;
+        private final String nameEng;
         private final int price;
         private final HotOrIced hotOrIced;
         private final boolean isWhipping;
@@ -32,6 +33,7 @@ public interface MenuReadUseCase {
             return FindMenuResult.builder()
                     .id(menu.getId())
                     .name(menu.getName())
+                    .nameEng(menu.getNameEng())
                     .price(menu.getPrice())
                     .hotOrIced(menu.getHotOrIced())
                     .isWhipping(menu.isWhipping())

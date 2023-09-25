@@ -15,6 +15,7 @@ public class MenuView {
 
     private final Long id;
     private final String name;
+    private final String nameEng;
     private final int price;
     private final HotOrIced hotOrIced;
     private final boolean isWhipping;
@@ -25,6 +26,7 @@ public class MenuView {
     public MenuView(MenuReadUseCase.FindMenuResult result) {
         this.id = result.getId();
         this.name = result.getName();
+        this.nameEng = result.getNameEng();
         this.price = result.getPrice();
         this.isWhipping = result.isWhipping();
         this.hotOrIced = result.getHotOrIced();

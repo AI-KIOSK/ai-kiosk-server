@@ -23,6 +23,9 @@ public class MenuEntity {
 
     private String name;
 
+    @Column(name ="name_eng")
+    private String nameEng;
+
     private int price;
 
     @Enumerated(EnumType.STRING)
