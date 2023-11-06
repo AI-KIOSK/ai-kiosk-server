@@ -39,5 +39,5 @@ public class MenuEntity {
 
     private String description;
 
-    private byte[] img;
+    private String img;
 }

@@ -27,7 +27,7 @@ public interface MenuReadUseCase {
 
         private final String description;
 
-        private final byte[] img;
+        private final String img;
 
         public static FindMenuResult findByMenu(MenuEntity menu) {
             return FindMenuResult.builder()

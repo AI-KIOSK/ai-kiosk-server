@@ -21,7 +21,7 @@ public class MenuView {
     private final boolean isWhipping;
     private final CategoryEntity category;
     private final String description;
-    private final byte[] img;
+    private final String img;
 
     public MenuView(MenuReadUseCase.FindMenuResult result) {
         this.id = result.getId();
