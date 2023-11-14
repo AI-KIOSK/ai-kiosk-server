@@ -27,7 +27,8 @@ public interface MenuReadUseCase {
 
         private final String description;
 
-        private final String img;
+        private final String ice_img_url;
+        private final String hot_img_url;
 
         public static FindMenuResult findByMenu(MenuEntity menu) {
             return FindMenuResult.builder()
@@ -39,7 +40,8 @@ public interface MenuReadUseCase {
                     .isWhipping(menu.isWhipping())
                     .category(menu.getCategory())
                     .description(menu.getDescription())
-                    .img(menu.getImg())
+                    .ice_img_url(menu.getIceImgUrl())
+                    .hot_img_url(menu.getHotImgUrl())
                     .build();
         }
     }

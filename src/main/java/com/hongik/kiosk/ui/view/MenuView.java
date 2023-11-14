@@ -21,7 +21,8 @@ public class MenuView {
     private final boolean isWhipping;
     private final CategoryEntity category;
     private final String description;
-    private final String img;
+    private final String iceImgUrl;
+    private final String hotImgUrl;
 
     public MenuView(MenuReadUseCase.FindMenuResult result) {
         this.id = result.getId();
@@ -32,7 +33,7 @@ public class MenuView {
         this.hotOrIced = result.getHotOrIced();
         this.category = result.getCategory();
         this.description = result.getDescription();
-        this.img = result.getImg();
-
+        this.iceImgUrl = result.getIce_img_url();
+        this.hotImgUrl = result.getHot_img_url();
     }
 }

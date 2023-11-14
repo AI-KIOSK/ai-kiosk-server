@@ -39,5 +39,8 @@ public class MenuEntity {
 
     private String description;
 
-    private String img;
+    @Column(name = "ice_img_url")
+    private String iceImgUrl;
+    @Column(name = "hot_img_url")
+    private String hotImgUrl;
 }
