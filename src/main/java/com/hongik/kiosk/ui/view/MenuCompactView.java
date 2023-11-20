@@ -14,12 +14,14 @@ public class MenuCompactView {
     private final String name;
     private final String category;
 
+    private final int price;
     private final String iceImgUrl;
     private final String hotImgUrl;
 
     public MenuCompactView(MenuReadUseCase.FindMenuResult result) {
         this.id = result.getId();
         this.name = result.getName();
+        this.price = result.getPrice();
         this.category = result.getCategory().getCategory();
         this.iceImgUrl = result.getIce_img_url();
         this.hotImgUrl = result.getHot_img_url();

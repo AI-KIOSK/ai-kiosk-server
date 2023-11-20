@@ -37,7 +37,6 @@ public class MenuController {
     public ResponseEntity<ApiResponseView<MenuView>> getMenuByName(@RequestParam String name) {
 
         MenuReadUseCase.FindMenuResult result = menuReadUseCase.findMenuByName(name);
-        log.info("find {}", name);
         MenuView menuView = new MenuView(result);
         return ResponseEntity.ok(new ApiResponseView<>(menuView));
 
