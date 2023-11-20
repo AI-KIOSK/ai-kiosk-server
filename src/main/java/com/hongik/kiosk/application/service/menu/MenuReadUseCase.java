@@ -12,6 +12,8 @@ import java.util.List;
 public interface MenuReadUseCase {
     List<FindMenuResult> findAllMenu();
 
+    FindMenuResult findMenuByName(String name);
+
     @Getter
     @Builder
     @ToString
