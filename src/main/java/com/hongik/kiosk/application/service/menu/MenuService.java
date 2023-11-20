@@ -7,7 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
+
 
 @Slf4j
 @Service
@@ -19,5 +21,12 @@ public class MenuService implements MenuReadUseCase {
     @Override
     public List<FindMenuResult> findAllMenu() {
         return menuRepository.findAll().stream().map(FindMenuResult::findByMenu).collect(Collectors.toList());
+    }
+
+    @Override
+    public FindMenuResult findMenuByName(String name) {
+        Optional<MenuEntity> result = menuRepository.findByName(name);
+        return result.map(FindMenuResult::findByMenu).orElse(null);
+
     }
 }
